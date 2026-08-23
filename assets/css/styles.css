@@ -544,7 +544,7 @@ a {
 
     font-family: "Bold", sans-serif;
 
-    font-size: clamp(3.4rem, 5.2vw, 5.4rem);
+    font-size: 5rem;
 
     line-height: 1;
     letter-spacing: -0.05em;
@@ -596,7 +596,8 @@ a {
 .hero-card-message h2 {
     margin: 0;
 
-    font-size: clamp(1.35rem, 2vw, 1.9rem);
+    font-family: "Bold", sans-serif;
+    font-size: 1.9rem;
 
     line-height: 1.2;
 
@@ -915,269 +916,6 @@ a {
 
 
 /* ========================================
-   LAPTOP
-======================================== */
-
-@media (max-width: 1199.98px) {
-
-    .navbar-nav {
-        gap: 1.5rem;
-    }
-
-
-    .hero-card {
-        width: min(900px, 88vw);
-
-        padding: 2.8rem 3rem;
-    }
-
-
-    .hero-card-main {
-        gap: 4rem;
-    }
-
-
-    .hero-card-identity h1 {
-        font-size: clamp(3.2rem, 5.4vw, 5rem);
-    }
-
-}
-
-
-/* ========================================
-   TABLET
-======================================== */
-
-@media (max-width: 991.98px) {
-
-    .navbar-collapse {
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
-    }
-
-
-    .navbar-nav {
-        gap: 0;
-    }
-
-
-    .nav-item {
-        width: 100%;
-    }
-
-
-    .nav-link {
-        padding: 0.8rem 0 !important;
-
-        font-size: 1rem;
-    }
-
-
-    .nav-link::after {
-        bottom: 5px;
-    }
-
-
-    .hero {
-        min-height: 88vh;
-
-        padding: 3rem 0;
-    }
-
-
-    .hero-card {
-        width: min(760px, 88vw);
-
-        aspect-ratio: auto;
-
-        min-height: 430px;
-
-        padding: 2.4rem;
-    }
-
-
-    .hero-card-main {
-        grid-template-columns: 1.15fr 0.85fr;
-
-        gap: 2.5rem;
-    }
-
-
-    .hero-card-identity h1 {
-        font-size: clamp(3rem, 7vw, 4.5rem);
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .navbar {
-        padding: 0.9rem 0;
-    }
-
-
-    .navbar-brand {
-        font-size: 0.9rem;
-    }
-
-
-    .nav-link {
-        font-size: 0.95rem;
-    }
-
-
-    .hero {
-        min-height: auto;
-
-        padding: 4rem 0;
-    }
-
-
-    .hero-card {
-        width: 88vw;
-
-        aspect-ratio: auto;
-
-        min-height: auto;
-
-        padding: 1.8rem;
-
-        transform:
-            perspective(1200px)
-            rotateZ(-2deg);
-    }
-
-
-    .hero-card:hover {
-        transform:
-            perspective(1200px)
-            rotateZ(0deg)
-            translateY(-4px)
-            scale(1.005);
-    }
-
-
-    .hero-card-main {
-        grid-template-columns: 1fr;
-
-        gap: 2rem;
-
-        margin: 2.5rem 0;
-    }
-
-
-    .hero-card-identity h1 {
-        font-size: clamp(2.6rem, 12vw, 4rem);
-    }
-
-
-    .hero-card-message {
-        max-width: 380px;
-    }
-
-
-    .hero-card-actions {
-        flex-direction: column;
-
-        align-items: stretch;
-
-        gap: 1.5rem;
-    }
-
-
-    .hero-actions-primary {
-        width: 100%;
-
-        flex-direction: column;
-    }
-
-
-    .hero-btn {
-        width: 100%;
-
-        min-height: 48px;
-
-        padding: 0.9rem 1.1rem;
-
-        text-align: center;
-    }
-
-
-    .hero-actions-secondary {
-        width: 100%;
-
-        margin-left: 0;
-
-        justify-content: flex-end;
-
-        gap: 1.5rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .site-header .col-1,
-    .hero .col-1 {
-        width: 5%;
-    }
-
-
-    .site-header .col-10,
-    .hero .col-10 {
-        width: 90%;
-    }
-
-
-    .navbar {
-        padding: 0.8rem 0;
-    }
-
-
-    .hero-card {
-        width: 100%;
-
-        padding: 1.5rem;
-    }
-
-
-    .hero-card-top {
-        font-size: 0.6rem;
-    }
-
-
-    .hero-card-identity h1 {
-        font-size: clamp(2.4rem, 13vw, 3.5rem);
-    }
-
-
-    .hero-specialties {
-        font-size: 0.7rem;
-    }
-
-
-    .hero-card-message h2 {
-        font-size: 1.25rem;
-    }
-
-
-    .hero-actions-secondary {
-        justify-content: space-between;
-    }
-
-}
-
-/* ========================================
    PROFILE SECTION
 ======================================== */
 
@@ -1490,31 +1228,6 @@ a {
 }
 
 
-@media (hover: hover) and (pointer: fine) {
-
-    .capability-item:hover .capability-number {
-        color: var(--rosa-neon);
-    }
-
-
-    .capability-item:hover .capability-title {
-        color: var(--morado-neon);
-
-        transform: translateX(0.5rem);
-    }
-
-
-    .capability-item:hover .capability-arrow {
-        color: var(--rosa-neon);
-
-        transform:
-            translateX(0.3rem)
-            translateY(-0.3rem);
-    }
-
-}
-
-
 /* ========================================
    ACCORDION CONTENT
 ======================================== */
@@ -1557,7 +1270,8 @@ a {
         opacity 0.35s ease,
         transform 0.45s ease,
         padding-bottom 0.45s ease;
-        padding-top:1rem;
+
+    padding-top: 1rem;
 }
 
 
@@ -1643,189 +1357,15 @@ a {
    PERSON
 ======================================== */
 
-.profile-person {
-    display: flex;
-
-    align-items: center;
-
-    gap: 0.7rem;
-
-    margin-bottom: 0.85rem;
-}
-
-
-.profile-avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-shrink: 0;
-
-    font-family: "Bold", sans-serif;
-    font-size: 0.78rem;
-
-    color: var(--blanco);
-
-    background: var(--morado-neon);
-
-    border: 2px solid var(--morado-neon);
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 0.8rem rgba(157, 78, 221, 0.18);
-
-    transition:
-        background 0.35s ease,
-        border-color 0.35s ease,
-        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-        box-shadow 0.4s ease;
-}
-
-
-.profile-message-card:hover .profile-avatar {
-    background: var(--rosa-neon);
-
-    border-color: var(--rosa-neon);
-
-    transform:
-        rotate(-5deg)
-        scale(1.05);
-
-    box-shadow:
-        0 0 1rem rgba(255, 43, 214, 0.22);
-}
-
-
-.profile-person-info strong {
-    font-family: "Bold", sans-serif;
-
-    font-size: 0.85rem;
-
-    color: var(--blanco);
-}
-
-
-.profile-easter-egg {
-    font-family: "Medium", sans-serif;
-
-    font-size: 0.7rem;
-
-    color: var(--morado-neon);
-
-    opacity: 0.5;
-
-    transition:
-        opacity 0.35s ease,
-        color 0.35s ease;
-}
-
-
-.profile-message-card:hover .profile-easter-egg {
-    opacity: 0.65;
-
-    color: var(--rosa-neon);
-}
-
 
 /* ========================================
    MESSAGE
 ======================================== */
 
-.profile-message {
-    max-width: 20rem;
-
-    margin: 0 0 0.9rem;
-
-    font-family: "Regular", sans-serif;
-
-    font-size: 0.82rem;
-
-    line-height: 1.45;
-
-    color: var(--blanco);
-}
-
 
 /* ========================================
    WHATSAPP CTA
 ======================================== */
-
-.profile-btn {
-    position: relative;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 0.9rem;
-
-    min-width: 7.5rem;
-
-    padding: 0.6rem 0.8rem;
-
-    overflow: hidden;
-
-    isolation: isolate;
-
-    font-family: "Medium", sans-serif;
-    font-size: 0.68rem;
-
-    color: var(--blanco);
-
-    background: linear-gradient(
-        120deg,
-        var(--morado-neon),
-        var(--rosa-neon)
-    );
-
-    border: 1px solid var(--morado-neon);
-
-    box-shadow:
-        0 0 0.9rem rgba(157, 78, 221, 0.15);
-
-    transition:
-        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-        border-color 0.3s ease,
-        box-shadow 0.4s ease,
-        filter 0.3s ease;
-}
-
-
-.profile-btn:hover {
-    color: var(--blanco);
-
-    transform:
-        translateY(-0.2rem)
-        scale(1.04);
-
-    border-color: var(--rosa-neon);
-
-    filter: brightness(1.12);
-
-    box-shadow:
-        0 0.8rem 1.8rem rgba(0, 0, 0, 0.28),
-        0 0 1.4rem rgba(255, 43, 214, 0.28);
-}
-
-
-.profile-btn-arrow {
-    font-family: "Medium", sans-serif;
-
-    font-size: 0.85rem;
-
-    transition:
-        transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-
-.profile-btn:hover .profile-btn-arrow {
-    transform:
-        translateX(0.22rem)
-        translateY(-0.22rem);
-}
 
 
 /* ========================================
@@ -1985,6 +1525,9 @@ a {
 
     border: 1px solid var(--gris-borde);
 
+    box-shadow:
+        0 0 0.9rem rgba(157, 78, 221, 0.15);
+
     transition:
         transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
         color 0.3s ease,
@@ -2045,6 +1588,8 @@ a {
         translateY(-0.2rem)
         scale(1.03);
 
+    filter: brightness(1.12);
+
     box-shadow:
         0 0.7rem 1.8rem rgba(0, 0, 0, 0.30),
         0 0 1rem rgba(255, 43, 214, 0.20);
@@ -2077,137 +1622,6 @@ a {
         translateY(-0.25rem);
 }
 
-
-/* ========================================
-   LAPTOP
-======================================== */
-
-@media (max-width: 1199.98px) {
-
-    .profile-wrapper {
-        column-gap: 4rem;
-    }
-
-
-    .section-title {
-        font-size: 3.5rem;
-    }
-
-}
-
-
-/* ========================================
-   TABLET
-======================================== */
-
-@media (max-width: 991.98px) {
-
-    .profile-section {
-        padding: 6rem 0;
-    }
-
-
-    .profile-wrapper {
-        grid-template-columns: 1fr;
-
-        gap: 4rem;
-    }
-
-
-    .profile-description {
-        max-width: 40rem;
-    }
-
-
-    .profile-message-card {
-        max-width: 27rem;
-    }
-
-
-    .section-title {
-        font-size: 3.25rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .profile-section {
-        padding: 5rem 0;
-    }
-
-
-    .section-title {
-        font-size: 2.7rem;
-    }
-
-
-    .profile-description {
-        font-size: 0.95rem;
-    }
-
-
-    .capability-title {
-        font-size: 1.15rem;
-    }
-
-
-    .capability-trigger {
-        grid-template-columns: 2.5rem 1fr auto;
-
-        padding: 1.4rem 0;
-    }
-
-
-    .capability-inner {
-        padding-left: 3.5rem;
-    }
-
-
-    .profile-message-card {
-        max-width: 100%;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .profile-section .col-1 {
-        width: 5%;
-    }
-
-
-    .profile-section .col-10 {
-        width: 90%;
-    }
-
-
-    .section-title {
-        font-size: 2.35rem;
-    }
-
-
-    .profile-message-card {
-        padding: 1rem;
-    }
-
-
-    .profile-avatar {
-        width: 2.6rem;
-        height: 2.6rem;
-    }
-
-}
 
 /* ========================================
    EXPERIENCE SECTION
@@ -2513,37 +1927,6 @@ a {
    JOB HOVER
 ======================================== */
 
-@media (hover: hover) and (pointer: fine) {
-
-    .experience-job:hover {
-        opacity: 1;
-
-        transform: translateY(-0.25rem);
-
-        border-color: var(--morado-neon);
-
-        cursor: pointer;
-    }
-
-
-    .experience-job:hover .experience-date {
-        color: var(--rosa-neon);
-    }
-
-
-    .experience-job:hover h3 {
-        color: var(--blanco);
-
-        transform: translateX(0.25rem);
-    }
-
-
-    .experience-job:hover p {
-        color: var(--morado-neon);
-    }
-
-}
-
 
 /* ========================================
    EASTER EGG CARD
@@ -2769,108 +2152,6 @@ a {
         translateY(-0.2rem);
 }
 
-
-/* ========================================
-   LAPTOP
-======================================== */
-
-@media (max-width: 1199.98px) {
-
-    .experience-wrapper {
-        grid-template-columns: 1fr 17rem;
-    }
-
-
-    .experience-jobs {
-        gap: 1rem;
-    }
-
-}
-
-
-/* ========================================
-   TABLET
-======================================== */
-
-@media (max-width: 991.98px) {
-
-    .experience-section {
-        padding: 4.5rem 0;
-    }
-
-
-    .experience-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-
-    .experience-message-card {
-        width: 20rem;
-
-        min-height: auto;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .experience-section {
-        padding: 4rem 0;
-    }
-
-
-    .experience-title {
-        font-size: 2rem;
-    }
-
-
-    .experience-jobs {
-        grid-template-columns: 1fr;
-
-        min-height: auto;
-    }
-
-
-    .experience-job {
-        min-height: 11rem;
-    }
-
-
-    .experience-message-card {
-        width: 100%;
-
-        min-height: auto;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .experience-section .col-1 {
-        width: 5%;
-    }
-
-
-    .experience-section .col-10 {
-        width: 90%;
-    }
-
-
-    .experience-title {
-        font-size: 1.8rem;
-    }
-
-}
 
 /* ========================================
    PROJECTS SECTION
@@ -3492,91 +2773,6 @@ a {
    FEATURED PROJECT HOVER
 ======================================== */
 
-@media (hover: hover) and (pointer: fine) {
-
-    .project-item:hover .project-number {
-        color: var(--rosa-neon);
-    }
-
-
-    .project-item:hover .project-identity h3 {
-        color: var(--blanco);
-
-        transform: translateX(0.3rem);
-    }
-
-
-    .project-item:hover .project-type {
-        color: var(--morado-neon);
-
-        opacity: 1;
-    }
-
-
-    .project-item:hover .project-description {
-        color: var(--blanco);
-    }
-
-
-    .project-item:hover .project-technologies span {
-        color: var(--blanco);
-
-        border-color: var(--morado-neon);
-    }
-
-
-    .project-item:hover .project-link {
-        color: var(--rosa-neon);
-
-        transform: translateX(0.2rem);
-    }
-
-
-    .project-item:hover .project-link::after {
-        width: 100%;
-    }
-
-
-    .project-item:hover .project-link-arrow {
-        transform:
-            translateX(0.2rem)
-            translateY(-0.2rem);
-    }
-
-
-    .project-item:hover .project-preview {
-        opacity: 1;
-
-        transform: scale(1);
-    }
-
-
-    .project-item:hover .project-preview-status {
-        opacity: 1;
-    }
-
-
-    .project-item:hover .project-preview-frame {
-        border-color: var(--morado-neon);
-
-        box-shadow:
-            0 0 1.8rem rgba(157, 78, 221, 0.12);
-    }
-
-
-    .project-item:hover .project-preview-frame img {
-        filter:
-            grayscale(0)
-            brightness(1);
-    }
-
-
-    .project-item:hover .project-power-line span {
-        width: 100%;
-    }
-
-}
-
 
 /* ========================================
    MORE PROJECTS
@@ -3818,42 +3014,6 @@ a {
    ARCHIVE HOVER
 ======================================== */
 
-@media (hover: hover) and (pointer: fine) {
-
-    .archive-project:hover {
-
-        border-color: var(--morado-neon);
-    }
-
-
-    .archive-project:hover .archive-number {
-        color: var(--rosa-neon);
-    }
-
-
-    .archive-project:hover .archive-name {
-        color: var(--blanco);
-
-        transform: translateX(0.2rem);
-    }
-
-
-    .archive-project:hover .archive-tags span {
-        color: var(--morado-neon);
-
-        border-color: rgba(157, 78, 221, 0.55);
-    }
-
-
-    .archive-project:hover .archive-link {
-        color: var(--rosa-neon);
-
-        text-shadow:
-            0 0 0.6rem rgba(255, 43, 214, 0.3);
-    }
-
-}
-
 
 /* ========================================
    PORTFOLIO NOTICE
@@ -3983,230 +3143,6 @@ a {
     color: white;
 }
 
-
-/* ========================================
-   LAPTOP
-======================================== */
-
-@media (max-width: 1199.98px) {
-
-    .projects-header {
-        grid-template-columns: 1fr 21rem;
-
-        gap: 3rem;
-    }
-
-
-    .projects-title {
-        font-size: 3.5rem;
-    }
-
-
-    .project-item {
-        grid-template-columns:
-            0.75fr
-            1.2fr
-            0.85fr;
-
-        gap: 2rem;
-    }
-
-}
-
-
-/* ========================================
-   TABLET
-======================================== */
-
-@media (max-width: 991.98px) {
-
-    .projects-section {
-        padding: 6rem 0;
-    }
-
-
-    .projects-header {
-        grid-template-columns: 1fr;
-
-        gap: 2.5rem;
-
-        margin-bottom: 4rem;
-    }
-
-
-    .projects-message-card {
-        max-width: 23rem;
-    }
-
-
-    .projects-title {
-        font-size: 3.25rem;
-    }
-
-
-    .project-item {
-        grid-template-columns:
-            0.8fr
-            1.2fr;
-
-        gap: 2.5rem;
-    }
-
-
-    .project-preview {
-        grid-column: 1 / -1;
-
-        width: 60%;
-
-        justify-self: end;
-
-        opacity: 1;
-
-        transform: none;
-    }
-
-
-    .project-preview-status {
-        opacity: 1;
-    }
-
-
-    .project-preview-frame img {
-        filter:
-            grayscale(0)
-            brightness(1);
-    }
-
-
-    .archive-project {
-        grid-template-columns:
-            3rem
-            1fr
-            1.3fr
-            auto;
-
-        gap: 1rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .projects-section {
-        padding: 5rem 0;
-    }
-
-
-    .projects-title {
-        font-size: 2.7rem;
-    }
-
-
-    .projects-intro {
-        font-size: 0.95rem;
-    }
-
-
-    .project-item {
-        grid-template-columns: 1fr;
-
-        gap: 2rem;
-
-        min-height: auto;
-    }
-
-
-    .project-identity h3 {
-        font-size: 1.7rem;
-
-        color: var(--blanco);
-    }
-
-
-    .project-preview {
-        grid-column: auto;
-
-        width: 100%;
-    }
-
-
-    .archive-project {
-        grid-template-columns:
-            2.5rem
-            1fr
-            auto;
-
-        gap: 0.8rem;
-
-        padding: 1.2rem 0;
-    }
-
-
-    .archive-tags {
-        grid-column: 2 / -1;
-    }
-
-
-    .archive-name {
-        font-size: 1rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .projects-section .col-1 {
-        width: 5%;
-    }
-
-
-    .projects-section .col-10 {
-        width: 90%;
-    }
-
-
-    .projects-title {
-        font-size: 2.35rem;
-    }
-
-
-    .projects-message-card {
-        max-width: 100%;
-    }
-
-
-    .project-preview-frame {
-        aspect-ratio: 16 / 10;
-    }
-
-
-    .archive-project {
-        grid-template-columns:
-            2rem
-            1fr;
-    }
-
-
-    .archive-link {
-        grid-column: 2;
-    }
-
-
-    .archive-tags {
-        grid-column: 2;
-    }
-
-}
 
 /* ========================================
    CONTACT SECTION
@@ -4711,180 +3647,6 @@ a {
    OPTION HOVER
 ======================================== */
 
-@media (hover: hover) and (pointer: fine) {
-
-    .contact-option:hover {
-        padding-left: 0.5rem;
-
-        border-color: transparent;
-    }
-
-
-    .contact-option:hover::after {
-        width: 100%;
-    }
-
-
-    .contact-option:hover .contact-option-number {
-        color: var(--rosa-neon);
-    }
-
-
-    .contact-option:hover .contact-option-label {
-        color: var(--morado-neon);
-    }
-
-
-    .contact-option:hover .contact-option-content strong {
-        color: var(--rosa-neon);
-
-        transform: translateX(0.25rem);
-    }
-
-
-    .contact-option:hover .contact-option-arrow {
-        color: var(--rosa-neon);
-
-        transform:
-            translateX(0.25rem)
-            translateY(-0.25rem);
-    }
-
-}
-
-
-/* ========================================
-   LAPTOP
-======================================== */
-
-@media (max-width: 1199.98px) {
-
-    .contact-layout {
-        gap: 5rem;
-    }
-
-
-    .contact-title {
-        font-size: 3.5rem;
-    }
-
-}
-
-
-/* ========================================
-   TABLET
-======================================== */
-
-@media (max-width: 991.98px) {
-
-    .contact-section {
-        padding: 6rem 0;
-    }
-
-
-    .contact-layout {
-        grid-template-columns: 1fr;
-
-        gap: 4rem;
-    }
-
-
-    .contact-content {
-        max-width: 38rem;
-    }
-
-
-    .contact-title {
-        font-size: 3.25rem;
-    }
-
-
-    .contact-message-card {
-        max-width: 25rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .contact-section {
-        padding: 5rem 0;
-    }
-
-
-    .contact-title {
-        font-size: 2.7rem;
-    }
-
-
-    .contact-intro {
-        font-size: 0.95rem;
-    }
-
-
-    .contact-option {
-        grid-template-columns:
-            2.2rem
-            1fr
-            auto;
-
-        gap: 1rem;
-
-        min-height: 8rem;
-    }
-
-
-    .contact-option-content strong {
-        font-size: 1.25rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .contact-section .col-1 {
-        width: 5%;
-    }
-
-
-    .contact-section .col-10 {
-        width: 90%;
-    }
-
-
-    .contact-title {
-        font-size: 2.35rem;
-    }
-
-
-    .contact-message-card {
-        max-width: 100%;
-    }
-
-
-    .contact-option {
-        grid-template-columns:
-            2rem
-            1fr
-            auto;
-    }
-
-
-    .contact-option-content p {
-        font-size: 0.75rem;
-    }
-
-}
 
 /* ========================================
    FOOTER
@@ -4973,63 +3735,6 @@ a {
     opacity: 0.6;
 }
 
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 767.98px) {
-
-    .site-footer {
-        padding: 2.5rem 0;
-    }
-
-
-    .footer-content h2 {
-        font-size: 1rem;
-    }
-
-
-    .footer-role {
-        font-size: 0.75rem;
-    }
-
-
-    .footer-specialties {
-        font-size: 0.68rem;
-    }
-
-
-    .footer-license {
-        font-size: 0.62rem;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE SMALL
-======================================== */
-
-@media (max-width: 575.98px) {
-
-    .site-footer .col-1 {
-        width: 5%;
-    }
-
-
-    .site-footer .col-10 {
-        width: 90%;
-    }
-
-
-    .footer-specialties {
-        max-width: 20rem;
-
-        line-height: 1.5;
-    }
-
-}
 
 /* ========================================
    PAGE LOADER
@@ -5392,12 +4097,778 @@ a {
 
 
 /* ========================================
+   HOVER / DESKTOP POINTER
+======================================== */
+
+@media (hover: hover) and (pointer: fine) {
+
+.capability-item:hover .capability-number {
+        color: var(--rosa-neon);
+    }
+
+
+    .capability-item:hover .capability-title {
+        color: var(--morado-neon);
+
+        transform: translateX(0.5rem);
+    }
+
+
+    .capability-item:hover .capability-arrow {
+        color: var(--rosa-neon);
+
+        transform:
+            translateX(0.3rem)
+            translateY(-0.3rem);
+    }
+
+.experience-job:hover {
+        opacity: 1;
+
+        transform: translateY(-0.25rem);
+
+        border-color: var(--morado-neon);
+
+        cursor: pointer;
+    }
+
+
+    .experience-job:hover .experience-date {
+        color: var(--rosa-neon);
+    }
+
+
+    .experience-job:hover h3 {
+        color: var(--blanco);
+
+        transform: translateX(0.25rem);
+    }
+
+
+    .experience-job:hover p {
+        color: var(--morado-neon);
+    }
+
+.project-item:hover .project-number {
+        color: var(--rosa-neon);
+    }
+
+
+    .project-item:hover .project-identity h3 {
+        color: var(--blanco);
+
+        transform: translateX(0.3rem);
+    }
+
+
+    .project-item:hover .project-type {
+        color: var(--morado-neon);
+
+        opacity: 1;
+    }
+
+
+    .project-item:hover .project-description {
+        color: var(--blanco);
+    }
+
+
+    .project-item:hover .project-technologies span {
+        color: var(--blanco);
+
+        border-color: var(--morado-neon);
+    }
+
+
+    .project-item:hover .project-link {
+        color: var(--rosa-neon);
+
+        transform: translateX(0.2rem);
+    }
+
+
+    .project-item:hover .project-link::after {
+        width: 100%;
+    }
+
+
+    .project-item:hover .project-link-arrow {
+        transform:
+            translateX(0.2rem)
+            translateY(-0.2rem);
+    }
+
+
+    .project-item:hover .project-preview {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+
+    .project-item:hover .project-preview-status {
+        opacity: 1;
+    }
+
+
+    .project-item:hover .project-preview-frame {
+        border-color: var(--morado-neon);
+
+        box-shadow:
+            0 0 1.8rem rgba(157, 78, 221, 0.12);
+    }
+
+
+    .project-item:hover .project-preview-frame img {
+        filter:
+            grayscale(0)
+            brightness(1);
+    }
+
+
+    .project-item:hover .project-power-line span {
+        width: 100%;
+    }
+
+.archive-project:hover {
+
+        border-color: var(--morado-neon);
+    }
+
+
+    .archive-project:hover .archive-number {
+        color: var(--rosa-neon);
+    }
+
+
+    .archive-project:hover .archive-name {
+        color: var(--blanco);
+
+        transform: translateX(0.2rem);
+    }
+
+
+    .archive-project:hover .archive-tags span {
+        color: var(--morado-neon);
+
+        border-color: rgba(157, 78, 221, 0.55);
+    }
+
+
+    .archive-project:hover .archive-link {
+        color: var(--rosa-neon);
+
+        text-shadow:
+            0 0 0.6rem rgba(255, 43, 214, 0.3);
+    }
+
+.contact-option:hover {
+        padding-left: 0.5rem;
+
+        border-color: transparent;
+    }
+
+
+    .contact-option:hover::after {
+        width: 100%;
+    }
+
+
+    .contact-option:hover .contact-option-number {
+        color: var(--rosa-neon);
+    }
+
+
+    .contact-option:hover .contact-option-label {
+        color: var(--morado-neon);
+    }
+
+
+    .contact-option:hover .contact-option-content strong {
+        color: var(--rosa-neon);
+
+        transform: translateX(0.25rem);
+    }
+
+
+    .contact-option:hover .contact-option-arrow {
+        color: var(--rosa-neon);
+
+        transform:
+            translateX(0.25rem)
+            translateY(-0.25rem);
+    }
+
+}
+
+
+/* ========================================
+   LAPTOP
+======================================== */
+
+@media (max-width: 1199.98px) {
+
+.navbar-nav {
+        gap: 1.5rem;
+    }
+
+
+    .hero-card {
+        width: min(900px, 88vw);
+
+        padding: 2.8rem 3rem;
+    }
+
+
+    .hero-card-main {
+        gap: 4rem;
+    }
+
+
+    .hero-card-identity h1 {
+        font-size: 4rem;
+    }
+
+.profile-wrapper {
+        column-gap: 4rem;
+    }
+
+
+    .section-title {
+        font-size: 3.5rem;
+    }
+
+.experience-wrapper {
+        grid-template-columns: 1fr 17rem;
+    }
+
+
+    .experience-jobs {
+        gap: 1rem;
+    }
+
+.projects-header {
+        grid-template-columns: 1fr 21rem;
+
+        gap: 3rem;
+    }
+
+
+    .projects-title {
+        font-size: 3.5rem;
+    }
+
+
+    .project-item {
+        grid-template-columns:
+            0.75fr
+            1.2fr
+            0.85fr;
+
+        gap: 2rem;
+    }
+
+.contact-layout {
+        gap: 5rem;
+    }
+
+
+    .contact-title {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 991.98px) {
+
+.navbar-collapse {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .navbar-nav {
+        gap: 0;
+    }
+
+
+    .nav-item {
+        width: 100%;
+    }
+
+
+    .nav-link {
+        padding: 0.8rem 0 !important;
+
+        font-size: 1rem;
+    }
+
+
+    .nav-link::after {
+        bottom: 5px;
+    }
+
+
+    .hero {
+        min-height: 88vh;
+
+        padding: 3rem 0;
+    }
+
+
+    .hero-card {
+        width: min(760px, 88vw);
+
+        aspect-ratio: auto;
+
+        min-height: 430px;
+
+        padding: 2.4rem;
+    }
+
+
+    .hero-card-main {
+        grid-template-columns: 1.15fr 0.85fr;
+
+        gap: 2.5rem;
+    }
+
+
+    .hero-card-identity h1 {
+        font-size: 4.25rem;
+    }
+
+.profile-section {
+        padding: 6rem 0;
+    }
+
+
+    .profile-wrapper {
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+    }
+
+
+    .profile-description {
+        max-width: 40rem;
+    }
+
+
+    .profile-message-card {
+        max-width: 27rem;
+    }
+
+
+    .section-title {
+        font-size: 3.25rem;
+    }
+
+.experience-section {
+        padding: 4.5rem 0;
+    }
+
+
+    .experience-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience-message-card {
+        width: 20rem;
+
+        min-height: auto;
+    }
+
+.projects-section {
+        padding: 6rem 0;
+    }
+
+
+    .projects-header {
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+
+        margin-bottom: 4rem;
+    }
+
+
+    .projects-message-card {
+        max-width: 23rem;
+    }
+
+
+    .projects-title {
+        font-size: 3.25rem;
+    }
+
+
+    .project-item {
+        grid-template-columns:
+            0.8fr
+            1.2fr;
+
+        gap: 2.5rem;
+    }
+
+
+    .project-preview {
+        grid-column: 1 / -1;
+
+        width: 60%;
+
+        justify-self: end;
+
+        opacity: 1;
+
+        transform: none;
+    }
+
+
+    .project-preview-status {
+        opacity: 1;
+    }
+
+
+    .project-preview-frame img {
+        filter:
+            grayscale(0)
+            brightness(1);
+    }
+
+
+    .archive-project {
+        grid-template-columns:
+            3rem
+            1fr
+            1.3fr
+            auto;
+
+        gap: 1rem;
+    }
+
+.contact-section {
+        padding: 6rem 0;
+    }
+
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+
+        gap: 4rem;
+    }
+
+
+    .contact-content {
+        max-width: 38rem;
+    }
+
+
+    .contact-title {
+        font-size: 3.25rem;
+    }
+
+
+    .contact-message-card {
+        max-width: 25rem;
+    }
+
+}
+
+
+/* ========================================
    MOBILE
 ======================================== */
 
 @media (max-width: 767.98px) {
 
-    .loader-avatar {
+.navbar {
+        padding: 0.9rem 0;
+    }
+
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+
+    .hero {
+        min-height: auto;
+
+        padding: 4rem 0;
+    }
+
+
+    .hero-card {
+        width: 88vw;
+
+        aspect-ratio: auto;
+
+        min-height: auto;
+
+        padding: 1.8rem;
+
+        transform:
+            perspective(1200px)
+            rotateZ(-2deg);
+    }
+
+
+    .hero-card:hover {
+        transform:
+            perspective(1200px)
+            rotateZ(0deg)
+            translateY(-4px)
+            scale(1.005);
+    }
+
+
+    .hero-card-main {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+        margin: 2.5rem 0;
+    }
+
+
+    .hero-card-identity h1 {
+        font-size: 4rem;
+    }
+
+
+    .hero-card-message {
+        max-width: 380px;
+    }
+
+
+    .hero-card-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 1.5rem;
+    }
+
+
+    .hero-actions-primary {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .hero-btn {
+        width: 100%;
+
+        min-height: 48px;
+
+        padding: 0.9rem 1.1rem;
+
+        text-align: center;
+    }
+
+
+    .hero-actions-secondary {
+        width: 100%;
+
+        margin-left: 0;
+
+        justify-content: flex-end;
+
+        gap: 1.5rem;
+    }
+
+.profile-section {
+        padding: 5rem 0;
+    }
+
+
+    .section-title {
+        font-size: 2.7rem;
+    }
+
+
+    .profile-description {
+        font-size: 0.95rem;
+    }
+
+
+    .capability-title {
+        font-size: 1.15rem;
+    }
+
+
+    .capability-trigger {
+        grid-template-columns: 2.5rem 1fr auto;
+
+        padding: 1.4rem 0;
+    }
+
+
+    .capability-inner {
+        padding-left: 3.5rem;
+    }
+
+
+    .profile-message-card {
+        max-width: 100%;
+    }
+
+.experience-section {
+        padding: 4rem 0;
+    }
+
+
+    .experience-title {
+        font-size: 2rem;
+    }
+
+
+    .experience-jobs {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .experience-job {
+        min-height: 11rem;
+    }
+
+
+    .experience-message-card {
+        width: 100%;
+
+        min-height: auto;
+    }
+
+.projects-section {
+        padding: 5rem 0;
+    }
+
+
+    .projects-title {
+        font-size: 2.7rem;
+    }
+
+
+    .projects-intro {
+        font-size: 0.95rem;
+    }
+
+
+    .project-item {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+
+        min-height: auto;
+    }
+
+
+    .project-identity h3 {
+        font-size: 1.7rem;
+
+        color: var(--blanco);
+    }
+
+
+    .project-preview {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+
+    .archive-project {
+        grid-template-columns:
+            2.5rem
+            1fr
+            auto;
+
+        gap: 0.8rem;
+
+        padding: 1.2rem 0;
+    }
+
+
+    .archive-tags {
+        grid-column: 2 / -1;
+    }
+
+
+    .archive-name {
+        font-size: 1rem;
+    }
+
+.contact-section {
+        padding: 5rem 0;
+    }
+
+
+    .contact-title {
+        font-size: 2.7rem;
+    }
+
+
+    .contact-intro {
+        font-size: 0.95rem;
+    }
+
+
+    .contact-option {
+        grid-template-columns:
+            2.2rem
+            1fr
+            auto;
+
+        gap: 1rem;
+
+        min-height: 8rem;
+    }
+
+
+    .contact-option-content strong {
+        font-size: 1.25rem;
+    }
+
+.site-footer {
+        padding: 2.5rem 0;
+    }
+
+
+    .footer-content h2 {
+        font-size: 1rem;
+    }
+
+
+    .footer-role {
+        font-size: 0.75rem;
+    }
+
+
+    .footer-specialties {
+        font-size: 0.68rem;
+    }
+
+
+    .footer-license {
+        font-size: 0.62rem;
+    }
+
+.loader-avatar {
         width: 4rem;
         height: 4rem;
 
@@ -5430,12 +4901,197 @@ a {
 
 
 /* ========================================
+   MOBILE SMALL
+======================================== */
+
+@media (max-width: 575.98px) {
+
+.site-header .col-1,
+    .hero .col-1 {
+        width: 5%;
+    }
+
+
+    .site-header .col-10,
+    .hero .col-10 {
+        width: 90%;
+    }
+
+
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+
+    .hero-card {
+        width: 100%;
+
+        padding: 1.5rem;
+    }
+
+
+    .hero-card-top {
+        font-size: 0.6rem;
+    }
+
+
+    .hero-card-identity h1 {
+        font-size: 3.5rem;
+    }
+
+
+    .hero-specialties {
+        font-size: 0.7rem;
+    }
+
+
+    .hero-card-message h2 {
+        font-size: 1.25rem;
+    }
+
+
+    .hero-actions-secondary {
+        justify-content: space-between;
+    }
+
+.profile-section .col-1 {
+        width: 5%;
+    }
+
+
+    .profile-section .col-10 {
+        width: 90%;
+    }
+
+
+    .section-title {
+        font-size: 2.35rem;
+    }
+
+
+    .profile-message-card {
+        padding: 1rem;
+    }
+
+
+    .profile-avatar {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+.experience-section .col-1 {
+        width: 5%;
+    }
+
+
+    .experience-section .col-10 {
+        width: 90%;
+    }
+
+
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+.projects-section .col-1 {
+        width: 5%;
+    }
+
+
+    .projects-section .col-10 {
+        width: 90%;
+    }
+
+
+    .projects-title {
+        font-size: 2.35rem;
+    }
+
+
+    .projects-message-card {
+        max-width: 100%;
+    }
+
+
+    .project-preview-frame {
+        aspect-ratio: 16 / 10;
+    }
+
+
+    .archive-project {
+        grid-template-columns:
+            2rem
+            1fr;
+    }
+
+
+    .archive-link {
+        grid-column: 2;
+    }
+
+
+    .archive-tags {
+        grid-column: 2;
+    }
+
+.contact-section .col-1 {
+        width: 5%;
+    }
+
+
+    .contact-section .col-10 {
+        width: 90%;
+    }
+
+
+    .contact-title {
+        font-size: 2.35rem;
+    }
+
+
+    .contact-message-card {
+        max-width: 100%;
+    }
+
+
+    .contact-option {
+        grid-template-columns:
+            2rem
+            1fr
+            auto;
+    }
+
+
+    .contact-option-content p {
+        font-size: 0.75rem;
+    }
+
+.site-footer .col-1 {
+        width: 5%;
+    }
+
+
+    .site-footer .col-10 {
+        width: 90%;
+    }
+
+
+    .footer-specialties {
+        max-width: 20rem;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* ========================================
    REDUCED MOTION
 ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
 
-    .matrix-column,
+.matrix-column,
     .loader-avatar,
     .loader-progress span,
     .loader-content {
