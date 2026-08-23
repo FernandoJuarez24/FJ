@@ -46,13 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (window.innerWidth < 992) {
 
                 const collapseInstance =
-                    bootstrap.Collapse.getInstance(menu);
+                    bootstrap.Collapse.getOrCreateInstance(menu);
 
-                if (collapseInstance) {
-
-                    collapseInstance.hide();
-
-                }
+                collapseInstance.hide();
 
             }
 
